@@ -5,7 +5,7 @@ This is a professional-grade Chrome extension designed to help IT professionals 
 
 Installation:
 
-To use this chrome extension, you need a webserver with PHP already configured and running. This extension is designed to work on IIS with PHP version 8.0, but it should work on other versions as well. Make sure you have a URL that can hit the PHP.index file such as https://mytesturl.com/index.php
+To use this chrome extension, you need a webserver with PHP already configured and running. This extension is designed to work on IIS with PHP version 8.0, but it should work on other versions as well. Make sure you have a URL that can hit the index.php file such as https://mytesturl.com/index.php
 
 Configuration:
 
