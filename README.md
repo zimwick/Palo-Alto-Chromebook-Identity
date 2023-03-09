@@ -5,7 +5,7 @@ First you will need a webserver with php already configured and running. I have 
 
 Make sure you have a url that can hit the php.index file so like https://mytesturl.com/index.php
 
-in the index.php file go to line 29 and put in the url of your plao alto firewall such as https://10.10.10.10/api/?type=user-id
+in the index.php file go to line 29 and put in the url of your palo alto firewall such as https://10.10.10.10/api/?type=user-id
 then on line 30 enter in the palo alto api key. Palo alto has documentation on how to get the api key. 
 thats it for the index.php file.
 
