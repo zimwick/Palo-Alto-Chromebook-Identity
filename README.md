@@ -19,4 +19,4 @@ Then zip the folder up and you can upload it to chrome webstore developer dashbo
 
 NOTES
 
-this is a chrome extensoin and is using api calls that will only work in a managed chromebook environment. This means you have to have the ability to force push this app to chromebookes, that is the only way it will work. If you try and just install this extension manually to test for example it will not pull the ip or username.
+this is a chrome extension and is using api calls that will only work in a managed chromebook environment. This means you have to have the ability to force push this app to chromebookes, that is the only way it will work. If you try and just install this extension manually to test for example it will not pull the ip or username.
