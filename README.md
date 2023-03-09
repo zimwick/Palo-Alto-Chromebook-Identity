@@ -1,7 +1,7 @@
 # Palo-Alto-Chromebook-Identity
 This is a chrome extension that will grab the ip of the chrome book and the signed in user, it will then post this to a webserver hosting php. From there the php will post the ip and username to a palo alto firewall api so that it can log the identity to match with traffic.
 
-First you will need a webserver with php already confifured and running. I have this set to run on IIS with php version 8.0 I cannot gauarntee if it will work on other versions but I assume it will.
+First you will need a webserver with php already configured and running. I have this set to run on IIS with php version 8.0 I cannot gauarntee if it will work on other versions but I assume it will.
 
 Make sure you have a url that can hit the php.index file so like https://mytesturl.com/index.php
 
