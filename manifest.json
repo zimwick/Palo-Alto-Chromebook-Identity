@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome_Identity",
+  "description": "gets the ip and username then sends to the palo for identity",
+  "version": "2",
+  "permissions": [
+    "identity.email",
+	"identity",
+	"enterprise.networkingAttributes"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "Logo.png"
+  },
+   "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+   "icons": {
+    "128": "128.png"
+  }
+}
