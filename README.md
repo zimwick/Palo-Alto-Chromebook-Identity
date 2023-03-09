@@ -23,7 +23,7 @@ This is a Chrome extension that uses API calls that only work in a managed Chrom
 
 Credits:
 
-This extension was created by Zimwick (https://github.com/zimwick), an IT professional with extensive experience in managing identity in a Chromebook environment. Zimwick created this extension to address a common need in the IT industry and has generously made it available on GitHub for others to use and modify.
+This extension was created by Zimwick (https://github.com/zimwick), an IT professional with experience in managing identity in a Chromebook environment. Zimwick created this extension to address a common need in the IT industry and has generously made it available on GitHub for others to use and modify.
 
 License:
 
