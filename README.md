@@ -1,22 +1,30 @@
 # Palo-Alto-Chromebook-Identity
-This is a chrome extension that will grab the ip of the chrome book and the signed in user, it will then post this to a webserver hosting php. From there the php will post the ip and username to a palo alto firewall api so that it can log the identity to match with traffic.
+Introduction:
 
-First you will need a webserver with php already configured and running. I have this set to run on IIS with php version 8.0 I cannot gauarntee if it will work on other versions but I assume it will.
+This is a professional-grade Chrome extension designed to help IT professionals manage identity in a managed Chromebook environment. The extension collects the IP address of a Chromebook and the signed-in user and then posts it to a webserver hosting PHP. After that, the PHP will post the IP and username to a Palo Alto firewall API to log the identity and match it with traffic.
 
-Make sure you have a url that can hit the php.index file so like https://mytesturl.com/index.php
+Installation:
 
-in the index.php file go to line 29 and put in the url of your palo alto firewall such as https://10.10.10.10/api/?type=user-id
-then on line 30 enter in the palo alto api key. Here is palo altos documentation on how to get the api key https://docs.paloaltonetworks.com/pan-os/9-1/pan-os-panorama-api/get-started-with-the-pan-os-xml-api/get-your-api-key you can also do it directly in the browser if you are comfortable with that. 
-thats it for the index.php file.
+To use this extension, you need a webserver with PHP already configured and running. This extension is designed to work on IIS with PHP version 8.0, but it should work on other versions as well. Make sure you have a URL that can hit the PHP.index file such as https://mytesturl.com/index.php
 
-Next open your background.js file and go to line 17 and enter in the url that points to the php file such as https://mytesturl.com/index.php
+Configuration:
 
-open the mainfest.json file and change the Logo.png to whatever picture you want to use for your chrome extension this on line 13
-then on line 20 change that to another picture you want to use, the one on line 20 is your bigger logo, the one on line 13 is the samller icon.
+In the index.php file, go to line 29 and enter the URL of your Palo Alto firewall, such as https://10.10.10.10/api/?type=user-id. Then, on line 30, enter your Palo Alto API key. You can find the documentation for obtaining the API key here: https://docs.paloaltonetworks.com/pan-os/9-1/pan-os-panorama-api/get-started-with-the-pan-os-xml-api/get-your-api-key. You can also obtain it directly from the browser if you are comfortable with that. That is all you need to do for the index.php file.
 
-make sure you have the popup.html, manifest.json, background.js and the 2 logo files you want to use all in one folder, do not include the php file in that folder.
-Then zip the folder up and you can upload it to chrome webstore developer dashboard, and once its approved you must force the app to be pushed to a chromebook otherwise the api calls will not work. that is it, you should start seeing log.log file get generated on the webserver folder where the php file is and you should start seeing identities getting mapped in the palo alto firewall.
+Next, open your background.js file and go to line 17. Enter the URL that points to the PHP file such as https://mytesturl.com/index.php.
 
-NOTES
+Then, open the manifest.json file and change Logo.png to whatever picture you want to use for your Chrome extension on line 13. On line 20, change it to another picture you want to use; the one on line 20 is your bigger logo, and the one on line 13 is the smaller icon.
 
-this is a chrome extension and is using api calls that will only work in a managed chromebook environment. This means you have to have the ability to force push this app to chromebookes, that is the only way it will work. If you try and just install this extension manually to test for example it will not pull the ip or username.
+Make sure you have the popup.html, manifest.json, background.js, and the two logo files you want to use in one folder. Do not include the PHP file in that folder. Then, zip the folder and upload it to Chrome Webstore developer dashboard. Once it's approved, you must force the app to be pushed to a Chromebook; otherwise, the API calls will not work. That is all. You should start seeing the log.log file getting generated in the webserver folder where the PHP file is, and identities should start getting mapped in the Palo Alto firewall.
+
+Notes:
+
+This is a Chrome extension that uses API calls that only work in a managed Chromebook environment. This means you must have the ability to force push this app to Chromebooks; otherwise, it will not work. If you try to install this extension manually to test, for example, it will not pull the IP or username.
+
+Credits:
+
+This extension was created by Zimwick (https://github.com/zimwick), an IT professional with extensive experience in managing identity in a Chromebook environment. Zimwick created this extension to address a common need in the IT industry and has generously made it available on GitHub for others to use and modify.
+
+License:
+
+This extension is licensed under the MIT License (https://opensource.org/licenses/MIT), which allows anyone to use, modify, and distribute the extension as long as they include the original copyright notice and disclaimer.
