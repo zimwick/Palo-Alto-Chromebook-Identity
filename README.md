@@ -15,7 +15,7 @@ open the mainfest.json file and change the Logo.png to whatever picture you want
 then on line 20 change that to another picture you want to use, the one on line 20 is your bigger logo, the one on line 13 is the samller icon.
 
 make sure you have the popup.html, manifest.json, background.js and the 2 logo files you want to use all in one folder, do not include the php file in that folder.
-Then zip the folder up and you can upload it to chrome webstore developer dashboard, and once its approved you must force the app to be pushed to a chromebook otherwise the api calls will not work. that is is, you should start seeing log.log file get generated on the webserver folder where the php file is and you should start seeing identities getting mapped in the palo alto firewall.
+Then zip the folder up and you can upload it to chrome webstore developer dashboard, and once its approved you must force the app to be pushed to a chromebook otherwise the api calls will not work. that is it, you should start seeing log.log file get generated on the webserver folder where the php file is and you should start seeing identities getting mapped in the palo alto firewall.
 
 NOTES
 
