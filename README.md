@@ -1,7 +1,7 @@
 # Palo-Alto-Chromebook-Identity
 Introduction:
 
-This is a professional-grade Chrome extension designed to help IT professionals manage identity in a managed Chromebook environment. The extension collects the IP address of a Chromebook and the signed-in user and then posts it to a webserver hosting PHP. After that, the PHP will post the IP and username to a Palo Alto firewall API to log the identity and match it with traffic.
+This is a Chrome extension designed to help IT professionals manage identity in a managed Chromebook environment. The extension collects the IP address of a Chromebook and the signed-in user and then posts it to a webserver hosting PHP. After that, the PHP will post the IP and username to a Palo Alto firewall API to log the identity and match it with traffic.
 
 Installation:
 
